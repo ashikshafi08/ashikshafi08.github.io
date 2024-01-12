@@ -11,8 +11,8 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
+    - title: Master in Computer Science
+      institution: Illinois Institute of Technology, Chicago IL.
       year: 1905
       description:
         - Description 1.
@@ -31,8 +31,8 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
+    - title: Machine Learning Intern
+      institution: NeuralMetrics.ai
       year: 1933 - 1955
       description:
         - Description 1.

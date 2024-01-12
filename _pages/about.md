@@ -2,25 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Full Stack & Machine Learning Engineer
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: profile-pic.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Chicago,IL</p>
+    <p>(312)-900-7691</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+As a dynamic Computer Science graduate from Illinois Institute of Technology, I blend academic excellence with a unique 'learning by hacking' ethos. My journey is characterized by a zeal for tackling complex projects, breaking them down to their fundamentals, and reconstructing them with enhanced functionality. This methodical, exploratory approach has been pivotal in my development across machine learning, data analysis, and software development arenas. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My professional stint at NeuralMetrics.ai and as a Teaching Assistant has sharpened my command over Python, various machine learning frameworks, and statistical methods. My engagement in open-source projects further underscores my commitment to collaborative development and community contribution in the tech sphere.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+As a tech lead and website manager for Phi Kappa Sigma, I've effectively utilized technology to drive community engagement and operational efficiency, honing my leadership skills and understanding of technology’s role in organizational dynamics.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My professional philosophy is simple yet profound: identify a challenge, dissect it to its core, and rebuild it with enhanced insights and functionality. This ‘hacking’ mindset, combined with my experience in open-source collaboration and leadership, fuels my passion for continuous learning and problem-solving. I am eager to apply this versatile and innovative skill set to tackle diverse technological challenges and contribute meaningfully in a dynamic professional environment.

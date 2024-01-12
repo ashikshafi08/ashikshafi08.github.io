@@ -1,12 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ashikshafi08
+  
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ashikshafi08/Learning-Fastai
+  - ashikshafi08/Learning_Tensorflow
+  - ashikshafi08/learning_to_see_in_the_dark_Fastai 
+  - ashikshafi08/Recipe1M 
+  - ashikshafi08/PubMed_200k_RCT_Implementation 
+  - ashikshafi08/Ecommerce-Full-Stack-App 
+  - ashikshafi08/KotlinSimpleCalculator 
+  - ashikshafi08/Fingerprint_restoration_with_MIRNet 

@@ -3,7 +3,7 @@ layout: post
 title: "Why You Should Write"
 author: Ashik Shaffi
 published_in: "Artificialis"
-date: 2021-09-13
+date: 2024-08-13
 description: "The journey of discovering oneself through writing."
 tags: [writing, self-discovery, creativity, mental-health]
 categories: blog

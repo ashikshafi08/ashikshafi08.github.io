@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Aram synthetic Code Generatopr
+description: Generates high quality code qa data for LLM Training
 img: assets/img/12.jpg
 importance: 1
 category: work

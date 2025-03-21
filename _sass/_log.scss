@@ -1,0 +1,27 @@
+.log {
+  margin-top: 2rem;
+  
+  .log-item {
+    margin-bottom: 2rem;
+    
+    .title {
+      margin-bottom: 0.5rem;
+      color: var(--global-theme-color);
+    }
+    
+    .date {
+      margin-bottom: 1rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
+    
+    hr {
+      margin: 2rem 0;
+      border-color: var(--global-divider-color);
+    }
+    
+    &:last-child hr {
+      display: none;
+    }
+  }
+} 

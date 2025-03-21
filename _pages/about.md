@@ -2,25 +2,33 @@
 layout: about
 title: about
 permalink: /
-subtitle: Full Stack & Machine Learning Engineer
+subtitle: Machine Learning Engineer & AI Researcher
 
 profile:
   align: right
   image: profile-pic.png
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Chicago,IL</p>
+    <p>Chicago, IL</p>
     <p>(312)-900-7691</p>
+    <p>ashiksyedshaffiullah@gmail.com</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-As a dynamic Computer Science graduate from Illinois Institute of Technology, I blend academic excellence with a unique 'learning by hacking' ethos. My journey is characterized by a zeal for tackling complex projects, breaking them down to their fundamentals, and reconstructing them with enhanced functionality. This methodical, exploratory approach has been pivotal in my development across machine learning, data analysis, and software development arenas. 
+As a Machine Learning Engineer specializing in AI and LLM systems, I combine academic excellence with practical innovation in the field of artificial intelligence. Currently pursuing my Master of Computer Science at Illinois Institute of Technology, I've developed expertise in building and optimizing large language models, RAG systems, and autonomous AI solutions.
 
-My professional stint at NeuralMetrics.ai and as a Teaching Assistant has sharpened my command over Python, various machine learning frameworks, and statistical methods. My engagement in open-source projects further underscores my commitment to collaborative development and community contribution in the tech sphere.
+My role as a Founding Machine Learning Engineer at Nakamoto LLC has allowed me to engineer cutting-edge AI systems, including an autonomous bug-fixing system with LlamaIndex-based RAG and LLM-driven patch generation. I've also contributed to the development of efficient mining solutions and fine-tuning frameworks for mathematical reasoning LLMs.
 
-As a tech lead and website manager for Phi Kappa Sigma, I've effectively utilized technology to drive community engagement and operational efficiency, honing my leadership skills and understanding of technology’s role in organizational dynamics.
+My technical expertise spans across:
+- Advanced ML frameworks: PyTorch, TensorFlow, HuggingFace, LangChain
+- AI/ML technologies: RAG, LLMs, Prompt Engineering, Model Quantization
+- Full-stack development: Python, FastAPI, Docker, Kubernetes
+- Data science: Pandas, NumPy, Scikit-learn, SQL
+- Cloud & DevOps: AWS, Azure ML, Git, CI/CD
 
-My professional philosophy is simple yet profound: identify a challenge, dissect it to its core, and rebuild it with enhanced insights and functionality. This ‘hacking’ mindset, combined with my experience in open-source collaboration and leadership, fuels my passion for continuous learning and problem-solving. I am eager to apply this versatile and innovative skill set to tackle diverse technological challenges and contribute meaningfully in a dynamic professional environment.
+I'm passionate about pushing the boundaries of AI technology and making it more accessible and efficient. My approach combines theoretical knowledge with practical implementation, focusing on creating scalable and robust AI solutions that solve real-world problems.
+
+Beyond technical skills, I actively contribute to the open-source community, having made significant contributions to projects like Bittensor and PyTorch Vision. I believe in the power of collaborative development and continuous learning in the rapidly evolving field of AI.

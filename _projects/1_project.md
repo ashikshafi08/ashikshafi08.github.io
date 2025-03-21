@@ -1,12 +1,32 @@
 ---
-layout: page
-title: Aram synthetic Code Generatopr
-description: Generates high quality code qa data for LLM Training
-img: assets/img/12.jpg
+layout: project
+title: Weave Framework
+subtitle: Synthetic Data Generator for Finetuning LLMs
+image: /assets/img/projects/weave.png
+alt: Weave Framework
+description: >
+  A production-ready Python framework for AI-powered synthetic data generation, designed to create high-quality training data for LLM fine-tuning.
+category: AI/ML
 importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
+
+### Overview
+Architected a production-ready Python framework for AI-powered synthetic data generation, generating **1M+ high-quality synthetic samples** for LLM fine-tuning across various domains.
+
+### Key Features
+- Engineered specialized "noisers" for context-aware data augmentation
+- Improved language model robustness
+- Increased synthetic dataset diversity by **30%**
+- Intelligent dataset management tools
+- Automated validation for data integrity
+- Reduced preprocessing time by **40%**
+
+### Technologies Used
+- Python
+- PyTorch
+- Hugging Face
+- Data Processing Pipelines
+- Machine Learning
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

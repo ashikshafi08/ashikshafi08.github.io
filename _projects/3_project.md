@@ -1,12 +1,34 @@
 ---
-layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+layout: project
+title: PubMed 200k RCT Implementation
+subtitle: Medical Abstract Classification System
+image: /assets/img/projects/pubmed.png
+alt: PubMed 200k RCT Implementation
+description: >
+  A deep learning model for classifying sentences in medical abstracts into categories such as BACKGROUND, METHODS, and RESULTS.
+category: AI/ML
 importance: 3
-category: work
 ---
+
+### Overview
+Implemented a deep learning model to classify sentences in medical abstracts into categories such as BACKGROUND, METHODS, and RESULTS, achieving **87.31%** accuracy.
+
+### Key Features
+- Fine-tuned deep learning model for medical text classification
+- Hybrid approach combining:
+  - Token embeddings
+  - Character embeddings
+  - Positional information
+- Optimized data preprocessing pipeline
+- Comprehensive hyperparameter tuning
+- Improved model efficiency and generalization
+
+### Technologies Used
+- NLP
+- TensorFlow
+- BiLSTM
+- Deep Learning
+- Natural Language Processing
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

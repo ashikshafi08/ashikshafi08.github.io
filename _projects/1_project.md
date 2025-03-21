@@ -1,32 +1,52 @@
 ---
-layout: project
+layout: page
 title: Weave Framework
-subtitle: Synthetic Data Generator for Finetuning LLMs
-image: /assets/img/projects/weave.png
-alt: Weave Framework
-description: >
-  A production-ready Python framework for AI-powered synthetic data generation, designed to create high-quality training data for LLM fine-tuning.
-category: AI/ML
+description: A production-ready Python framework for AI-powered synthetic data generation, designed to create high-quality training data for LLM fine-tuning.
+img: assets/img/projects/weave.png
 importance: 1
+category: AI/ML
 ---
 
-### Overview
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/weave.png" title="Weave Framework Architecture" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+## Overview
+
 Architected a production-ready Python framework for AI-powered synthetic data generation, generating **1M+ high-quality synthetic samples** for LLM fine-tuning across various domains.
 
-### Key Features
-- Engineered specialized "noisers" for context-aware data augmentation
-- Improved language model robustness
-- Increased synthetic dataset diversity by **30%**
-- Intelligent dataset management tools
-- Automated validation for data integrity
-- Reduced preprocessing time by **40%**
+## Key Features
 
-### Technologies Used
-- Python
-- PyTorch
-- Hugging Face
-- Data Processing Pipelines
-- Machine Learning
+- **Specialized Data Augmentation**: Engineered "noisers" for context-aware data augmentation
+- **Enhanced Model Robustness**: Improved language model robustness through diverse training data
+- **Dataset Diversity**: Increased synthetic dataset diversity by **30%**
+- **Intelligent Management**: Built smart dataset management tools with automated validation
+- **Performance Optimization**: Reduced preprocessing time by **40%** through efficient pipelines
+
+## Technical Implementation
+
+The framework is built using modern Python tools and libraries:
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+import datasets
+```
+
+Key components include:
+- Custom data augmentation pipelines
+- Automated quality validation
+- Efficient preprocessing workflows
+- Scalable dataset management
+
+## Technologies Used
+
+- **Core**: Python, PyTorch
+- **ML/AI**: Hugging Face Transformers
+- **Data**: Custom Processing Pipelines
+- **Validation**: Automated Testing Framework
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

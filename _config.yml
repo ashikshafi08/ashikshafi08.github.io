@@ -181,6 +181,11 @@ logs:
   scrollable: true # adds a vertical scroll bar if there are more than 3 log items
   limit: 5 # leave blank to include all the logs in the `_log` folder
 
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
+
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------

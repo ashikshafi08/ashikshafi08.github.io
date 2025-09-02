@@ -6,10 +6,10 @@ subtitle: Machine Learning Engineer & AI Researcher
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: true
+  image: # removed profile image
   more_info: >
-    <p>Chicago, IL (312)-900-7691</p>
+    <p>Chicago, IL</p>
+    <p>(312)-900-7691</p>
     <p>ashiksyedshaffiullah@gmail.com</p>
 
 news: false
@@ -18,17 +18,13 @@ selected_papers: false
 social: true
 ---
 
-Machine Learning Engineer with expertise in LLMs, RAG systems, and autonomous AI solutions. Currently pursuing MS in Computer Science at Illinois Institute of Technology.
+I build AI systems that work.
 
-**Key Achievements:**
-- Developed an autonomous bug-fixing system achieving 32% success rate on benchmarks at $0.46/task
-- Built Weave Framework for synthetic data generation with advanced LLM capabilities
-- Contributed to Bittensor and PyTorch Vision open-source projects
+Currently pursuing MS in Computer Science at Illinois Institute of Technology, with focus on LLMs, RAG systems, and autonomous AI solutions.
 
-**Core Skills:**
-- **ML/AI**: LLMs, RAG, Prompt Engineering, Model Quantization
-- **Frameworks**: PyTorch, TensorFlow, HuggingFace, LangChain
-- **Development**: Python, FastAPI, Docker, Kubernetes
-- **Data & Cloud**: AWS, Azure ML, Git, CI/CD
+**Recent Work:**
+• Autonomous bug-fixing system (32% success rate, $0.46/task)
+• Weave Framework for synthetic data generation
+• Open-source contributions to Bittensor and PyTorch Vision
 
-I specialize in building production-ready AI systems that solve real-world problems efficiently and cost-effectively. 
+**Technologies:** Python • PyTorch • LLMs • RAG • Docker • AWS 

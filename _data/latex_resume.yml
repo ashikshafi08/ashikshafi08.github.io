@@ -1,0 +1,80 @@
+header:
+  name: "Ashik Syed Shaffiullah"
+  title: "AI Engineer | Machine Learning Engineer"
+  email: "ashiksyedshaffiullah@gmail.com"
+  phone: "+1-312-900-7691"
+
+sections:
+  - title: "Summary"
+    type: "summary"
+    content: "Founding ML Engineer (2+ yrs) who ships production LLM & RAG systems—autonomous bug-fixing agent (32% SWE-Bench), $200 K/mo RAG miner, and AI tools that 3× code-triage throughput."
+  
+  - title: "Experience"
+    type: "experience"
+    jobs:
+      - title: "Founding Machine Learning Engineer (Applied Research)"
+        dates: "Jun 2024 -- Present"
+        company: "Nakamoto LLC"
+        location: "Chicago, IL"
+        bullets:
+          - "Built a non-agentic LLM-based RAG pipeline for bug localization and patching using structure-aware retrieval, semantic ranking, and AST-guided CoSIL localization; achieved <strong>52% accuracy</strong> on <strong>SWE-bench Verified</strong>, outperforming agent-based baselines."
+          - "Led the development of a RAG-based miner on Bittensor, collaborating with engineers on DevOps automation (<strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Prometheus</strong>); reduced downtime by <strong>30%</strong> and generated ~$200K/month."
+          - "Developed modular fine-tuning pipelines for BigCodeBench with <strong>Qwen/DeepSeek</strong>; enabled <strong>40% faster</strong> iteration across 100K+ examples."
+          - "Boosted symbolic math LLMs via adapter tuning and quantization; improved reasoning by <strong>27%</strong> and reduced model size by <strong>65%</strong>."
+      
+      - title: "Machine Learning Engineer"
+        dates: "Jan 2024 -- May 2024"
+        company: "Nakamoto LLC"
+        location: "Chicago, IL"
+        bullets:
+          - "Constructed early-stage fine-tuning pipelines using TRL + QLoRA; improved response quality by <strong>42%</strong> under high load."
+          - "Implemented the multilingual language pipeline for Zangief subnet; achieved <strong>92% accuracy</strong> across 20+ languages using semantic evaluation."
+          - "Orchestrated daily Apache Airflow DAGs to ingest, validate, and preprocess large-scale mathematical datasets and conversation logs for RAG fine-tuning workflows."
+      
+      - title: "Machine Learning Engineer"
+        dates: "Feb 2022 -- Aug 2022"
+        company: "NeuralMetrics.ai"
+        location: "Denver, CO"
+        bullets:
+          - "Created a classification engine using <strong>AWS Lambda</strong>, improving NAICS/SIC categorization accuracy by 25% for insurance industry applications."
+          - "Optimized XGBoost pipelines, reducing model latency by 30% and increasing prediction accuracy by 20% for real-time risk assessment."
+          - "Revamped risk scoring models by incorporating <strong>Bayesian methods</strong>, leading to a 20% reduction in false positives and improvement in model interpretability."
+  
+  - title: "Technical Skills"
+    type: "skills"
+    skills:
+      "Programming Languages": "Python, TypeScript, JavaScript, Java, SQL"
+      "ML & LLMs": "PyTorch, HuggingFace, Quantization, TTS/ASR, RAGAS, Vision Models (CLIP, BLIP, DINO), LangChain"
+      "Dev & API": "FastAPI, Flask, React, Node.js, Celery, GraphQL"
+      "MLOps & Infra": "MLflow, Prefect, Docker, Kubernetes, CI/CD"
+      "Data & Pipelines": "Apache Airflow, Spark (PySpark), DVC, PostgreSQL, MongoDB"
+      "Certifications": "AI Evals for Engineers (Maven, 2025; LLM evaluation, testing, and productionization), Mastering LLMs for Developers (Maven, 2024; fine-tuning, RAG, deployment)"
+  
+  - title: "Education"
+    type: "education"
+    schools:
+      - school: "Illinois Institute Of Technology"
+        dates: "Aug 2022 -- May 2024"
+        degree: "Master of Computer Science"
+        location: "Chicago, IL"
+      
+      - school: "Panimalar Engineering College (Anna University)"
+        dates: "Aug 2018 -- Jun 2022"
+        degree: "Bachelor of Engineering in Electronics and Communications"
+        location: "Chennai, India"
+  
+  - title: "Projects"
+    type: "projects"
+    projects:
+      - title: "Triage.Flow – Agentic GitHub Assistant"
+        github_url: "https://github.com/ashikshafi08/triage.flow"
+        bullets:
+          - "Built a production-ready, multi-index RAG assistant that lets developers query repos in natural language across code, issues, PRs, and docs."
+          - "Orchestrated composite retrieval over 6 indices with advanced caching, FAISS/BM25 ranking, and a FastAPI + WebSocket backend delivering sub-100 ms responses."
+          - "Created 15+ agent tools—patch linkage, semantic search, onboarding insights, code-evolution tracking—scaling to 1 M+ chunks and tripling triage throughput."
+      
+      - title: "Weave – Synthetic Dataset Engine for LLMs"
+        github_url: "https://github.com/ashikshafi08/weave"
+        bullets:
+          - "Generated 300K+ synthetic samples with a transformer-compatible engine and configurable noising, boosting domain diversity by 30% and reducing hallucinations."
+          - "Built a merge pipeline for real + synthetic data, cutting preprocessing time 40% and ensuring sampling consistency."

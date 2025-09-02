@@ -124,8 +124,8 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Byte Brawn # blog_name will be displayed in your blog page
-blog_description: Playing in the crossroads of code, weightlifting and jiu-jitsu.
+blog_name: Blogs # blog_name will be displayed in your blog page
+blog_description: Deep dives into AI, machine learning, and software engineering.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -266,8 +266,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
-display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
+display_tags: ['llm', 'synthetic-data', 'machine-learning', 'python', 'data-processing'] # these tags will be displayed on the front page of your blog
+display_categories: ['ai-ml'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

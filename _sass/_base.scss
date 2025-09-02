@@ -7,6 +7,475 @@
 @import "layout";
 @import "log";
 
+// Minimal About Page Styles
+.minimal-about {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    .minimal-name {
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: var(--global-text-color);
+    }
+    
+    .minimal-subtitle {
+      font-size: 1.1rem;
+      color: var(--global-text-color-light);
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+  
+  .content-section {
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    
+    p:first-child {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    strong {
+      font-weight: 600;
+      color: var(--global-text-color);
+    }
+    
+    ul {
+      list-style: none;
+      padding-left: 0;
+      
+      li {
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+        
+        &:before {
+          content: "•";
+          color: var(--global-theme-color);
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+  
+  .contact-section {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--global-divider-color);
+    
+    p {
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+    }
+  }
+  
+  .minimal-section {
+    margin-top: 3rem;
+    
+    .minimal-section-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-transform: lowercase;
+      
+      a {
+        color: var(--global-text-color);
+        text-decoration: none;
+        
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+  
+  .social-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    
+    .contact-icons {
+      a {
+        margin: 0 0.75rem;
+        font-size: 1.2rem;
+        color: var(--global-text-color-light);
+        
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+}
+
+// Beautiful Minimal Repositories Page
+.clean-repositories {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+    .project-card {
+      border-bottom: 1px solid var(--global-divider-color);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      .project-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background: rgba(var(--global-theme-color-rgb, 30, 144, 255), 0.05);
+          color: var(--global-theme-color);
+          
+          .project-arrow {
+            transform: translateX(4px);
+            opacity: 1;
+          }
+        }
+      }
+      
+      .project-content {
+        flex: 1;
+        
+        .project-title {
+          margin: 0 0 0.5rem 0;
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 1.3;
+          color: var(--global-text-color);
+          transition: color 0.2s ease;
+        }
+        
+        .project-path {
+          margin: 0;
+          font-size: 0.85rem;
+          color: var(--global-text-color-light);
+          font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+        }
+      }
+      
+      .project-arrow {
+        font-size: 1.2rem;
+        color: var(--global-text-color-light);
+        opacity: 0.6;
+        transition: all 0.2s ease;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+// Perfect LaTeX Resume Recreation
+.latex-resume {
+  max-width: 8.5in;
+  margin: 2rem auto;
+  padding: 0.75in;
+  background: white !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', 'Liberation Serif', serif;
+  font-size: 10pt;
+  line-height: 1.15;
+  color: black !important;
+  
+  // Force all text elements to black
+  *, *:before, *:after {
+    color: black !important;
+    background: transparent !important;
+  }
+
+  // Header exactly like LaTeX tabular
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8pt;
+    
+    .header-left {
+      .name {
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 0;
+        
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      
+      .title {
+        font-size: 10pt;
+        margin: 0;
+      }
+    }
+    
+    .header-right {
+      text-align: right;
+      font-size: 10pt;
+      line-height: 1.2;
+      
+      div {
+        margin: 0;
+        
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  // Section titles with underline
+  .resume-section {
+    margin-bottom: 12pt;
+    
+    .section-title {
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
+      margin: 0 0 4pt 0;
+      padding-bottom: 1pt;
+      border-bottom: 0.5pt solid black;
+    }
+    
+    .section-content {
+      font-size: 10pt;
+      
+      p {
+        margin: 0;
+        text-align: justify;
+        line-height: 1.15;
+      }
+    }
+  }
+
+  // Experience section - exact LaTeX layout
+  .job-entry {
+    margin-bottom: 8pt;
+    
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0;
+      
+      .job-left {
+        .job-title {
+          font-weight: bold;
+          font-size: 10pt;
+          margin: 0;
+        }
+        
+        .job-company {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+      }
+      
+      .job-right {
+        text-align: right;
+        
+        .job-date {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+        
+        .job-location {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+      }
+    }
+    
+    .job-bullets {
+      margin: 2pt 0 0 15pt;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        position: relative;
+        margin-bottom: 1pt;
+        padding-left: 8pt;
+        text-align: justify;
+        font-size: 9pt;
+        line-height: 1.15;
+        
+        &:before {
+          content: "•";
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  // Skills section - LaTeX itemize style
+  .skills-list {
+    margin-left: 15pt;
+    
+    .skill-item {
+      margin-bottom: 2pt;
+      font-size: 9pt;
+      line-height: 1.15;
+    }
+  }
+
+  // Education section - matching LaTeX resumeSubheading
+  .education-entry {
+    margin-bottom: 6pt;
+    
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      
+      .edu-left {
+        .edu-school {
+          font-weight: bold;
+          font-size: 10pt;
+          margin: 0;
+        }
+        
+        .edu-degree {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+      }
+      
+      .edu-right {
+        text-align: right;
+        
+        .edu-date {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+        
+        .edu-location {
+          font-style: italic;
+          font-size: 9pt;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // Projects section - LaTeX resumeProjectHeading style
+  .project-entry {
+    margin-bottom: 8pt;
+    
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 2pt;
+      
+      .project-title {
+        font-weight: bold;
+        font-size: 10pt;
+        margin: 0;
+        margin-right: 8pt;
+      }
+      
+      .github-link {
+        font-family: 'Courier New', monospace;
+        font-size: 9pt;
+        color: black;
+        text-decoration: none;
+      }
+    }
+    
+    .project-bullets {
+      margin: 2pt 0 0 15pt;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        position: relative;
+        margin-bottom: 1pt;
+        padding-left: 8pt;
+        text-align: justify;
+        font-size: 9pt;
+        line-height: 1.15;
+        
+        &:before {
+          content: "•";
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  // Mobile responsive
+  @media (max-width: 768px) {
+    margin: 1rem;
+    padding: 0.5in;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    .resume-header {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .header-right {
+        text-align: left;
+        margin-top: 6pt;
+      }
+    }
+    
+    .job-header,
+    .edu-header {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .job-right,
+      .edu-right {
+        text-align: left;
+      }
+    }
+  }
+
+  // Print styles
+  @media print {
+    margin: 0;
+    padding: 0.75in;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+}
+
 // Typography
 
 p,
@@ -615,6 +1084,98 @@ footer.sticky-bottom {
   .grid-item {
     width: 250px;
     margin-bottom: 10px;
+  }
+
+  // New minimalistic projects grid
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .project-card {
+    background: var(--global-card-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--global-divider-color);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-color: var(--global-theme-color);
+    }
+  }
+
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .project-image {
+    height: 200px;
+    overflow: hidden;
+    background: var(--global-divider-color);
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .project-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--global-text-color);
+    text-transform: none;
+  }
+
+  .project-description {
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .project-github {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--global-theme-color);
+    font-size: 0.875rem;
+    margin-top: auto;
+    
+    i {
+      font-size: 1rem;
+    }
   }
 
   h2.category {

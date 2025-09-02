@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto} 
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt, itemsep=1pt]}
+
+
+
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStartSpacious}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://ashikshafi08.github.io/}{\Large Ashik Syed Shaffiullah}} & Email: \href{mailto:ashiksyedshaffiullah@gmail.com}{ashiksyedshaffiullah@gmail.com} \\
+  \small AI Engineer \,|\, Machine Learning Engineer & Mobile: +1-312-900-7691 \\
+\end{tabular*}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+Founding ML Engineer (2+ yrs) who ships production LLM \& RAG systems—autonomous bug-fixing agent (32\% SWE-Bench), \$200 K/mo RAG miner, and AI tools that 3$\times$ code-triage throughput.
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+% \resumeSubheading
+%   {Founding Machine Learning Engineer (Applied Research)}{Jun 2024 -- Present}
+%   {Nakamoto LLC}{Chicago, IL}
+%   \resumeItemListStart
+%     \resumeItem{Shipped an autonomous bug-fixing agent using LLM-guided patching and LlamaIndex retrieval; resolved \textbf{32\%} of SWE-Bench tasks (15\% above baseline).}
+%     \resumeItem{Led RAG-based miner deployment on Bittensor with DevOps support; automated infra using \textbf{Docker}, \textbf{Kubernetes}, and \textbf{Prometheus}—reducing downtime by \textbf{80\%} and generating \textasciitilde\$200K/month.}
+%     \resumeItem{Developed modular fine-tuning pipelines for BigCodeBench with \textbf{Qwen/DeepSeek}; enabled \textbf{40\% faster} iteration across 100K+ examples.}
+%     \resumeItem{Boosted symbolic math LLMs via adapter tuning and quantization; improved reasoning by \textbf{27\%} and reduced model size by \textbf{65\%}.}
+%     \resumeItem{Collaborated with research leads to run large-scale evaluation across SWE-Bench and BigCodeBench; built internal tooling for patch verification and agent response tracking.}
+%   \resumeItemListEnd\vspace{4pt}
+
+\resumeSubheading
+  {Founding Machine Learning Engineer (Applied Research)}{Jun 2024 -- Present}
+  {Nakamoto LLC}{Chicago, IL}
+  \resumeItemListStart
+\resumeItem{Built a non-agentic LLM-based RAG pipeline for bug localization and patching using structure-aware retrieval, semantic ranking, and AST-guided CoSIL localization; achieved \textbf{52\%} accuracy on \textbf{SWE-bench Verified}, outperforming agent-based baselines.}
+\resumeItem{Led the development of a RAG-based miner on Bittensor, collaborating with engineers on DevOps automation (\textbf{Docker}, \textbf{Kubernetes}, \textbf{Prometheus}); reduced downtime by \textbf{30\%} and generated \textasciitilde\$200K/month.}
+\resumeItem{Developed modular fine-tuning pipelines for BigCodeBench with \textbf{Qwen/DeepSeek}; enabled \textbf{40\% faster} iteration across 100K+ examples.}
+\resumeItem{Boosted symbolic math LLMs via adapter tuning and quantization; improved reasoning by \textbf{27\%} and reduced model size by \textbf{65\%}.}
+
+\resumeItemListEnd
+
+  \vspace{4pt}
+
+
+\resumeSubheading
+  {Machine Learning Engineer}{Jan 2024 -- May 2024}
+  {Nakamoto LLC}{Chicago, IL}
+  \resumeItemListStart
+    \resumeItem{Constructed early-stage fine-tuning pipelines using TRL + QLoRA; improved response quality by \textbf{42\%} under high load.}
+    \resumeItem{Implemented the multilingual language pipeline for Zangief subnet; achieved \textbf{92\% accuracy} across 20+ languages using semantic evaluation.}
+    \resumeItem{Orchestrated daily Apache Airflow DAGs to ingest, validate, and preprocess large-scale mathematical datasets and conversation logs for RAG fine-tuning workflows.}
+    
+  \resumeItemListEnd\vspace{4pt}
+
+
+
+
+
+  \resumeSubheading
+    {Machine Learning Engineer}{Feb 2022 -- Aug 2022}
+    {NeuralMetrics.ai}{Denver, CO}
+    \resumeItemListStart
+      \resumeItem{Created a classification engine using \textbf{AWS Lambda}, improving NAICS/SIC categorization accuracy by 25\% for insurance industry applications.}
+      \resumeItem{Optimized XGBoost pipelines, reducing model latency by 30\% and increasing prediction accuracy by 20\% for real-time risk assessment.}
+    \resumeItem{Revamped risk scoring models by incorporating \textbf{Bayesian methods}, leading to a 20\% reduction in false positives and improvement in model interpretability.}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  \small{\item{
+    \textbf{Programming Languages}{: Python, TypeScript, JavaScript, Java, SQL} \\
+\textbf{ML \& LLMs}{: PyTorch, HuggingFace , Quantization, TTS/ASR, RAGAS, Vision Models (CLIP, BLIP, DINO), LangChain}\\
+    \textbf{Dev \& API}{: FastAPI, Flask, React, Node.js, Celery, GraphQL}\\
+    \textbf{MLOps \& Infra}{: MLflow, Prefect, Docker, Kubernetes, CI/CD} \\
+    \textbf{Data \& Pipelines}{: Apache Airflow, Spark (PySpark), DVC, PostgreSQL, MongoDB} \\
+    \textbf{Certifications}{: AI Evals for Engineers (Maven, 2025; LLM evaluation, testing, and productionization), Mastering LLMs for Developers (Maven, 2024; fine-tuning, RAG, deployment)} \\
+    
+
+  }}
+\end{itemize}
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Illinois Institute Of Technology}{Aug 2022 -- May 2024}
+    {Master of Computer Science}{Chicago, IL}
+  \resumeSubheading
+    {Panimalar Engineering College (Anna University)}{Aug 2018 -- Jun 2022}
+    {Bachelor of Engineering in Electronics and Communications}{Chennai, India}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+%   {\textbf{Triage.Flow – Agentic GitHub Assistant} \href{https://github.com/yourusername/triage.flow}{\texttt{[GitHub]}}}{}
+% \resumeItemListStart
+%   \resumeItem{Built a production-ready, multi-modal RAG platform for AI-powered GitHub repo analysis and code review, enabling natural language queries and agentic workflows across code, issues, PRs, and docs.}
+%   \resumeItem{Engineered composite retrieval over 6+ indices (code, issues, PRs, docs, tests, configs) with advanced caching, FAISS/BM25 ranking, and real-time FastAPI+WebSocket backend for sub-100ms responses.}
+%   \resumeItem{Developed 15+ modular agent tools—including patch linkage, semantic code search, onboarding intelligence, and code evolution tracking—scaling to 1M+ chunks and boosting triage throughput by 3$\times$.}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Triage.Flow – Agentic GitHub Assistant} \href{https://github.com/ashikshafi08/triage.flow}{\texttt{[GitHub]}}}{}
+\resumeItemListStart
+  \resumeItem{Built a production-ready, multi-index RAG assistant that lets developers query repos in natural language across code, issues, PRs, and docs.}
+  \resumeItem{Orchestrated composite retrieval over 6 indices with advanced caching, FAISS/BM25 ranking, and a FastAPI + WebSocket backend delivering sub-100 ms responses.}
+  \resumeItem{Created 15+ agent tools—patch linkage, semantic search, onboarding insights, code-evolution tracking—scaling to 1 M+ chunks and tripling triage throughput.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Weave – Synthetic Dataset Engine for LLMs} \href{https://github.com/ashikshafi08/weave}{\texttt{[GitHub]}}}{}
+\resumeItemListStart
+  \resumeItem{Generated 300\,K\,+ synthetic samples with a transformer-compatible engine and configurable noising, boosting domain diversity by 30\% and reducing hallucinations.}
+  \resumeItem{Built a merge pipeline for real + synthetic data, cutting preprocessing time 40\% and ensuring sampling consistency.}
+\resumeItemListEnd
+
+
+
+
+
+  
+  % \resumeProjectHeading
+  %   {\textbf{Weave – Synthetic Dataset Engine for LLMs} \href{https://github.com/yourusername/weave-dataset}{\texttt{[GitHub]}}}{}
+  %   \resumeItemListStart
+  %     \resumeItem{Constructed a transformer-compatible synthetic data engine producing over 300K samples with controllable attributes for LLM fine-tuning.}
+  %     \resumeItem{Created configurable noising strategies for context-aware augmentation, improving domain diversity by 30\% and reducing hallucinations.}
+  %     \resumeItem{Designed dataset merge tooling for real + synthetic data, reducing preprocessing time by 40\% and ensuring sampling consistency.}
+  %   \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}

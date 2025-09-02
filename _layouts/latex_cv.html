@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+{% assign resume = site.data.latex_resume %}
+
+<div class="latex-resume">
+  
+  <!-- Header -->
+  {% if resume.header %}
+  <div class="resume-header">
+    <div class="header-left">
+      {% if resume.header.name %}
+        <h1 class="name">
+          <a href="https://ashikshafi08.github.io/">{{ resume.header.name }}</a>
+        </h1>
+      {% endif %}
+      {% if resume.header.title %}
+        <div class="title">{{ resume.header.title }}</div>
+      {% endif %}
+    </div>
+    <div class="header-right">
+      {% if resume.header.email %}
+        <div>Email: <a href="mailto:{{ resume.header.email }}">{{ resume.header.email }}</a></div>
+      {% endif %}
+      {% if resume.header.phone %}
+        <div>Mobile: {{ resume.header.phone }}</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Sections -->
+  {% for section in resume.sections %}
+    <div class="resume-section">
+      <h2 class="section-title">{{ section.title }}</h2>
+      
+      {% case section.type %}
+        {% when 'summary' %}
+          <div class="section-content">
+            <p>{{ section.content }}</p>
+          </div>
+        
+        {% when 'experience' %}
+          <div class="section-content">
+            {% for job in section.jobs %}
+              <div class="job-entry">
+                <div class="job-header">
+                  <div class="job-left">
+                    <div class="job-title">{{ job.title }}</div>
+                    <div class="job-company">{{ job.company }}</div>
+                  </div>
+                  <div class="job-right">
+                    <div class="job-date">{{ job.dates }}</div>
+                    <div class="job-location">{{ job.location }}</div>
+                  </div>
+                </div>
+                {% if job.bullets.size > 0 %}
+                  <ul class="job-bullets">
+                    {% for bullet in job.bullets %}
+                      <li>{{ bullet }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        
+        {% when 'skills' %}
+          <div class="section-content">
+            <div class="skills-list">
+              {% for skill_pair in section.skills %}
+                <div class="skill-item">
+                  <strong>{{ skill_pair[0] }}</strong>: {{ skill_pair[1] }}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        
+        {% when 'education' %}
+          <div class="section-content">
+            {% for school in section.schools %}
+              <div class="education-entry">
+                <div class="edu-header">
+                  <div class="edu-left">
+                    <div class="edu-school">{{ school.school }}</div>
+                    <div class="edu-degree">{{ school.degree }}</div>
+                  </div>
+                  <div class="edu-right">
+                    <div class="edu-date">{{ school.dates }}</div>
+                    <div class="edu-location">{{ school.location }}</div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        
+        {% when 'projects' %}
+          <div class="section-content">
+            {% for project in section.projects %}
+              <div class="project-entry">
+                <div class="project-header">
+                  <div class="project-title">{{ project.title }}</div>
+                  {% if project.github_url %}
+                    <a href="{{ project.github_url }}" class="github-link">[GitHub]</a>
+                  {% endif %}
+                </div>
+                {% if project.bullets.size > 0 %}
+                  <ul class="project-bullets">
+                    {% for bullet in project.bullets %}
+                      <li>{{ bullet }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+      {% endcase %}
+    </div>
+  {% endfor %}
+
+</div>

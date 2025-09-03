@@ -17,6 +17,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--global-bg-color) !important;
   color: var(--global-text-color) !important;
+  
+  // Mobile responsive body
+  @media (max-width: 768px) {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
 }
 
 // Remove all box shadows for clean flat design
@@ -173,6 +179,30 @@ ul, ol {
   margin: 0 auto;
   padding: 3rem 2rem;
   
+  // Mobile responsive
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    
+    .post-header {
+      margin-bottom: 2rem !important;
+      
+      .post-title {
+        font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+      }
+      
+      .post-meta {
+        font-size: 0.9rem !important;
+      }
+      
+      .post-tags {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+  
   .post-header {
     margin-bottom: 3rem;
     text-align: center;
@@ -216,11 +246,25 @@ ul, ol {
         &:first-child {
           margin-top: 0;
         }
+        
+        // Mobile responsive headings
+        @media (max-width: 768px) {
+          margin: 2rem 0 1rem 0 !important;
+        }
       }
       
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.6rem; }
-      h3 { font-size: 1.3rem; }
+      h1 { 
+        font-size: 2rem;
+        @media (max-width: 768px) { font-size: 1.6rem !important; }
+      }
+      h2 { 
+        font-size: 1.6rem;
+        @media (max-width: 768px) { font-size: 1.4rem !important; }
+      }
+      h3 { 
+        font-size: 1.3rem;
+        @media (max-width: 768px) { font-size: 1.2rem !important; }
+      }
       
       p {
         color: var(--global-text-color) !important;
@@ -228,6 +272,14 @@ ul, ol {
         line-height: 1.7;
         margin-bottom: 1.8rem;
         text-align: justify;
+        
+        // Mobile responsive text
+        @media (max-width: 768px) {
+          font-size: 16px !important;
+          line-height: 1.6 !important;
+          text-align: left !important;
+          margin-bottom: 1.5rem !important;
+        }
       }
       
       ul, ol {
@@ -267,6 +319,14 @@ ul, ol {
         margin: 2rem 0;
         background: inherit !important;
         border: 1px solid var(--global-divider-color);
+        
+        // Mobile responsive code blocks
+        @media (max-width: 768px) {
+          padding: 1rem !important;
+          margin: 1.5rem -1rem !important;
+          border-radius: 0 !important;
+          font-size: 14px !important;
+        }
         
         code {
           background: transparent !important;

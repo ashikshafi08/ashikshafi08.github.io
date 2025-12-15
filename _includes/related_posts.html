@@ -1,19 +1,14 @@
 {% assign have_related_posts = false %}
 
-{% for post in site.related_posts | limit: site.related_blog_posts.max_related %}
+{% for post in site.related_posts limit: 3 %}
   {% unless have_related_posts %}
     {% assign have_related_posts = true %}
-    <br>
-    <hr>
-    <br>
-    <ul class="list-disc pl-8"></ul>
+    <hr style="margin: 3rem 0 2rem 0;">
 
-    <!-- Adds related posts to the end of an article -->
-    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
-    <p class="mb-2">Here are some more articles you might like to read next:</p>
+    <p style="color: var(--global-text-color-light); margin-bottom: 1rem;">More reading</p>
   {% endunless %}
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}

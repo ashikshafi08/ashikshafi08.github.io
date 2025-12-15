@@ -63,6 +63,12 @@ nav, .navbar, .nav-link, .navbar-nav {
 .container, .container-fluid, main, .main-content {
   background: var(--global-bg-color) !important;
   color: var(--global-text-color) !important;
+  
+  // Responsive padding for mobile
+  @media (max-width: 768px) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 // Card and content blocks
@@ -876,6 +882,39 @@ img {
   max-width: 90vw;
 }
 
+// Responsive video/iframe styling
+figure {
+  iframe,
+  video {
+    max-width: 100%;
+    height: auto;
+    
+    // Responsive YouTube/video embeds
+    @media (max-width: 768px) {
+      width: 100% !important;
+      height: auto !important;
+      min-height: 200px;
+    }
+  }
+  
+  // Responsive wrapper for YouTube embeds (16:9 aspect ratio)
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; // 16:9 aspect ratio
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 blockquote {
   background: var(--global-bg-color);
   border-left: 5px solid var(--global-theme-color);
@@ -1078,6 +1117,24 @@ blockquote {
 
     &:hover {
       color: var(--global-hover-color);
+    }
+    
+    @media (max-width: 768px) {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  .navbar-brand {
+    @media (max-width: 768px) {
+      font-size: 1rem !important;
+    }
+  }
+  
+  // Responsive navbar collapse
+  @media (max-width: 576px) {
+    .navbar-collapse {
+      margin-top: 1rem;
     }
   }
 
@@ -1527,6 +1584,30 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+    
+    @media (max-width: 768px) {
+      text-align: left;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  
+  .project-info {
+    @media (max-width: 768px) {
+      padding: 1rem !important;
+    }
+  }
+  
+  .project-title {
+    @media (max-width: 768px) {
+      font-size: 1.1rem !important;
+    }
+  }
+  
+  .project-description {
+    @media (max-width: 768px) {
+      font-size: 0.9rem !important;
+    }
   }
 }
 
@@ -1978,4 +2059,60 @@ nav[data-toggle="toc"] {
 
 #toc-sidebar {
   z-index: 1;
+}
+
+// Minimal Blog Page
+.blog-minimal {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  .blog-filters {
+    margin-bottom: 2.5rem;
+
+    a {
+      margin-right: 1.5rem;
+      color: var(--global-text-color-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: var(--global-text-color);
+      }
+    }
+  }
+
+  .post-list-minimal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .post-date {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--global-text-color-light);
+        font-family: monospace;
+        margin-bottom: 0.25rem;
+      }
+
+      a {
+        color: var(--global-text-color);
+        text-decoration: none;
+        font-size: 1.1rem;
+        line-height: 1.4;
+
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
 }

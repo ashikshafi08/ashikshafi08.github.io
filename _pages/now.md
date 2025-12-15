@@ -9,6 +9,12 @@ nav_order: 2
 
 This is my [now page](https://nownownow.com/about) - a snapshot of what I'm focused on.
 
+
+
+- **@Dec 15, 2025** - Travelling to San Francisco for [DevHouse SF](https://devhouse.devlabs.club/). First time going to a hacker house, and I'm excited to spend the next 7 days building what I love.
+
+
+
 ---
 
 <div class="now-entries">

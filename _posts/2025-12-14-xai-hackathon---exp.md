@@ -87,9 +87,8 @@ Looking back, I'm pretty happy with how it turned out. The architecture is clean
 
 I'm excited to keep going. If you're working on applied LLMs, voice agents, or developer tools and think I could be a fit for your team, I'd love to connect.
 
-You can check out the code and demo:
+You can check out the code:
 - [GitHub Repository](https://github.com/ashikshafi08/interview-platform)
-- [Demo Video](https://www.youtube.com/watch?v=w2ZOxkmLqt8)
 
 The project is built with Next.js 16, React 19, and XAI's realtime API. It's set up for Vercel deployment, though I'm still working on replacing the in-memory store with a proper database before putting it into production.
 

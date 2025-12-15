@@ -24,6 +24,17 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: $max-content-width;
+  
+  // Responsive container padding and margins
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    // Reduce top margin on mobile
+    &.mt-5 {
+      margin-top: 2rem !important;
+    }
+  }
 }
 
 // Profile

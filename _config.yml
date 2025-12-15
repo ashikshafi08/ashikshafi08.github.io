@@ -167,19 +167,19 @@ external_sources:
 # -----------------------------------------------------------------------------
 
 collections:
-  log:
+  now:
     defaults:
       layout: post
     output: true
-    permalink: /log/:path/
+    permalink: /now/:path/
   projects:
     output: true
     permalink: /projects/:path/
 
-logs:
+now:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 log items
-  limit: 5 # leave blank to include all the logs in the `_log` folder
+  scrollable: true # adds a vertical scroll bar if there are more than 3 items
+  limit: 30 # show last 30 entries for daily writing
 
 latest_posts:
   enabled: true
@@ -266,8 +266,8 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['llm', 'synthetic-data', 'machine-learning', 'python', 'data-processing'] # these tags will be displayed on the front page of your blog
-display_categories: ['ai-ml'] # these categories will be displayed on the front page of your blog
+display_tags: ['llm', 'synthetic-data', 'machine-learning', 'python', 'til'] # these tags will be displayed on the front page of your blog
+display_categories: ['ai-ml', 'til'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

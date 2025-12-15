@@ -1,0 +1,64 @@
+// Now page - timeline style entries
+.now-entries {
+  margin-top: 2rem;
+}
+
+.now-entry {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .now-date {
+    flex-shrink: 0;
+    width: 60px;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    font-family: monospace;
+  }
+
+  .now-content {
+    flex: 1;
+
+    strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    &:last-child p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Keep old .log class for backwards compatibility
+.log {
+  @extend .now-entries;
+
+  .log-item {
+    @extend .now-entry;
+
+    .title {
+      margin-bottom: 0.5rem;
+    }
+
+    .date {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
+
+    hr {
+      display: none;
+    }
+  }
+}
